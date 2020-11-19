@@ -1,0 +1,58 @@
+.cards {
+  display: flex;
+  flex-direction: row;
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: center;
+
+  padding-top: 2rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+.cw {
+  text-align: center;
+  transform: scale(1);
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important;
+}
+
+.cw:hover {
+  transform: scale(1.1);
+}
+
+.ca {
+  text-align: center;
+  transform: scale(1);
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important;
+}
+
+.ca:hover {
+  transform: scale(1.1);
+}
+
+.ct {
+  text-align: center;
+  transform: scale(1);
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important;
+}
+
+.ct:hover {
+  transform: scale(1.1);
+}
+
+.cj {
+  text-align: center;
+  transform: scale(1);
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important;
+}
+
+.cj:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 800px) {
+  .cards {
+    flex-wrap: wrap;
+    padding-top: 2rem;
+  }
+}
