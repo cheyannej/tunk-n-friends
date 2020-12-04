@@ -7,6 +7,10 @@ import CardColumns from 'react-bootstrap/CardColumns';
 import Container from 'react-bootstrap/Container';
 import './AboutUs.css';
 import ctimg from './ct.jpg';
+import cjimg from './cj.jpeg';
+//import caimg from './ca.jpg';
+//import cwimg from './cw.jpg';
+
 
 // <div id="cw">
 // Craig Wagner
@@ -43,7 +47,7 @@ import ctimg from './ct.jpg';
 
 const AboutUs = () => {
   return (
-    <div id="nav">
+    <div id="nav" style={{ backgroundColor: `pink`}}>
     <Navbar bg="light" expand="xl">
 
     <Navbar.Brand as={Link} to="/aboutus">About Us</Navbar.Brand>
@@ -60,45 +64,42 @@ const AboutUs = () => {
     <CardColumns className="cards">
 
 
-    <Card className="cw" border = "danger">
-    <Card.Img variant = "top" src="holder.js/100px180" />
+    <Card className="cw" border = "danger" style={{ }}>
+    <Card.Img variant = "top" alt="image of Craig" />
     <Card.Body>
     <Card.Title>Craig Wagner</Card.Title>
     <Card.Text>
-    Some quick example text to build on the card title and make up the bulk of
-    the card's content.
+    Craig is a graduating senior computer science student from
     </Card.Text>
     </Card.Body>
     </Card>
 
     <Card className="ca" border = "danger" style={{ }}>
-    <Card.Img variant = "top" src="holder.js/100px180" />
+    <Card.Img variant = "top" alt="image of Chris"/>
     <Card.Body>
     <Card.Title>Christopher Allis</Card.Title>
     <Card.Text>
-    Some quick example text to build on the card title and make up the bulk of
-    the card's content.
+    Christopher is a graduating senior computer science student from Winston-Salem, NC.
     </Card.Text>
     </Card.Body>
     </Card>
 
     <Card className="ct" border = "danger" style={{ }}>
-    <Card.Img variant = "top" src={ctimg} />
+    <Card.Img variant = "top" src = {ctimg}  alt = "image of Chanise"/>
     <Card.Body>
     <Card.Title>Chanise Taylor</Card.Title>
     <Card.Text>
-    Chanise is a senior computer science student from Charlotte, NC. Her main interests in computer science lie in data analytics, cybersecurity and frontend development. In this project, she took on the work of a graphic designer, as she worked on the logo, card deck design, the graphical user interfaces and the about page within the website.
+    Chanise is a senior computer science student at North Carolina A&T State University. Her main interests in computer science lie in data analytics, cybersecurity and frontend development. In this project, she took on the work of a graphic designer, as she worked on the logo, card deck design, the graphical user interfaces and the about page within the website.
     </Card.Text>
     </Card.Body>
     </Card>
 
     <Card className="cj" border = "danger" style={{ }}>
-    <Card.Img variant = "top" src="holder.js/100px180" />
+    <Card.Img variant = "top" src = {cjimg} alt = "image of Cheyanne" />
     <Card.Body>
     <Card.Title>Cheyanne Jackson</Card.Title>
     <Card.Text>
-    Some quick example text to build on the card title and make up the bulk of
-    the card's content.
+    Cheyanne Jackson is a graduating senior computer science student at North Carolina A&T State University. She is an aspiring software engineer, focusing in front-end development, who can eventually get into full-stack development as her journey goes on. She helped with documentation organization, website setup and making sure the Unity engine was able to be connected and showcased on the website.
     </Card.Text>
     </Card.Body>
     </Card>
