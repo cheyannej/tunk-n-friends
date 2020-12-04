@@ -6,6 +6,7 @@ import Card from 'react-bootstrap/Card';
 import CardColumns from 'react-bootstrap/CardColumns';
 import Container from 'react-bootstrap/Container';
 import './AboutUs.css';
+import ctimg from './ct.jpg';
 
 // <div id="cw">
 // Craig Wagner
@@ -59,7 +60,8 @@ const AboutUs = () => {
     <CardColumns className="cards">
 
 
-    <Card className="cw">
+    <Card className="cw" border = "danger">
+    <Card.Img variant = "top" src="holder.js/100px180" />
     <Card.Body>
     <Card.Title>Craig Wagner</Card.Title>
     <Card.Text>
@@ -69,7 +71,8 @@ const AboutUs = () => {
     </Card.Body>
     </Card>
 
-    <Card className="ca" style={{ }}>
+    <Card className="ca" border = "danger" style={{ }}>
+    <Card.Img variant = "top" src="holder.js/100px180" />
     <Card.Body>
     <Card.Title>Christopher Allis</Card.Title>
     <Card.Text>
@@ -79,17 +82,18 @@ const AboutUs = () => {
     </Card.Body>
     </Card>
 
-    <Card className="ct" style={{ }}>
+    <Card className="ct" border = "danger" style={{ }}>
+    <Card.Img variant = "top" src={ctimg} />
     <Card.Body>
     <Card.Title>Chanise Taylor</Card.Title>
     <Card.Text>
-    Some quick example text to build on the card title and make up the bulk of
-    the card's content.
+    Chanise is a senior computer science student from Charlotte, NC. Her main interests in computer science lie in data analytics, cybersecurity and frontend development. In this project, she took on the work of a graphic designer, as she worked on the logo, card deck design, the graphical user interfaces and the about page within the website.
     </Card.Text>
     </Card.Body>
     </Card>
 
-    <Card className="cj" style={{ }}>
+    <Card className="cj" border = "danger" style={{ }}>
+    <Card.Img variant = "top" src="holder.js/100px180" />
     <Card.Body>
     <Card.Title>Cheyanne Jackson</Card.Title>
     <Card.Text>
