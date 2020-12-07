@@ -8,8 +8,8 @@ import Container from 'react-bootstrap/Container';
 import './AboutUs.css';
 import ctimg from './ct.jpg';
 import cjimg from './cj.jpeg';
-//import caimg from './ca.jpg';
-//import cwimg from './cw.jpg';
+import cwimg from './cw.jpg';
+import caimg from './ca.jpg';
 
 
 // <div id="cw">
@@ -47,7 +47,7 @@ import cjimg from './cj.jpeg';
 
 const AboutUs = () => {
   return (
-    <div id="nav" style={{ backgroundColor: `pink`}}>
+    <div id="nav" style={{ backgroundColor: `gainsboro`}}>
     <Navbar bg="light" expand="xl">
 
     <Navbar.Brand as={Link} to="/aboutus">About Us</Navbar.Brand>
@@ -64,42 +64,42 @@ const AboutUs = () => {
     <CardColumns className="cards">
 
 
-    <Card className="cw" border = "danger" style={{ }}>
-    <Card.Img variant = "top" alt="image of Craig" />
+    <Card className="cw" border = "secondary" style={{ }}>
+    <Card.Img variant = "top" src = {cwimg} alt="image of Craig" width = {500} height = {250} />
     <Card.Body>
     <Card.Title>Craig Wagner</Card.Title>
     <Card.Text>
-    Craig is a graduating senior computer science student from
+    Craig Wagner is a graduating senior Computer Science student at North Carolina A&T State University. He is a computer engineer and developer, with specialty in virtualized environments and system architecture. Craig took on the role of the creative lead and team leader for the project, and also programmed for the game's Visual Layer and Client connection.
     </Card.Text>
     </Card.Body>
     </Card>
 
-    <Card className="ca" border = "danger" style={{ }}>
-    <Card.Img variant = "top" alt="image of Chris"/>
+    <Card className="ca" border = "secondary" style={{ }}>
+    <Card.Img variant = "top" src = {caimg} alt="image of Chris"/>
     <Card.Body>
     <Card.Title>Christopher Allis</Card.Title>
     <Card.Text>
-    Christopher is a graduating senior computer science student from Winston-Salem, NC.
+    Christopher Allis is a graduating senior Computer Science student at North Carolina A&T State University. While he enjoys tinkering on a plethora of different topics, he tends to work on server and web related work. In this project, Chris was tasked with creating the remote game server, handling the communication between the server and clients, and created the logical part of the card game engine.
     </Card.Text>
     </Card.Body>
     </Card>
 
-    <Card className="ct" border = "danger" style={{ }}>
+    <Card className="ct" border = "secondary" style={{ }}>
     <Card.Img variant = "top" src = {ctimg}  alt = "image of Chanise"/>
     <Card.Body>
     <Card.Title>Chanise Taylor</Card.Title>
     <Card.Text>
-    Chanise is a senior computer science student at North Carolina A&T State University. Her main interests in computer science lie in data analytics, cybersecurity and frontend development. In this project, she took on the work of a graphic designer, as she worked on the logo, card deck design, the graphical user interfaces and the about page within the website.
+    Chanise Taylor is a senior Computer Science student at North Carolina A&T State University. Her main interests in computer science lie in data analytics, cybersecurity and front-end development. In this project, she took on the role of a graphic designer, as she worked on the logo, card deck design, the game's graphical user interfaces on the Unity game engine and the about page within the website.
     </Card.Text>
     </Card.Body>
     </Card>
 
-    <Card className="cj" border = "danger" style={{ }}>
+    <Card className="cj" border = "secondary" style={{ }}>
     <Card.Img variant = "top" src = {cjimg} alt = "image of Cheyanne" />
     <Card.Body>
     <Card.Title>Cheyanne Jackson</Card.Title>
     <Card.Text>
-    Cheyanne Jackson is a graduating senior computer science student at North Carolina A&T State University. She is an aspiring software engineer, focusing in front-end development, who can eventually get into full-stack development as her journey goes on. She helped with documentation organization, website setup and making sure the Unity engine was able to be connected and showcased on the website.
+    Cheyanne Jackson is a graduating senior Computer Science student at North Carolina A&T State University. She is an aspiring software engineer, focusing in front-end development, who can eventually get into full-stack development as her journey goes on. She helped with documentation organization, website setup and making sure the Unity engine was able to be connected and showcased on the website.
     </Card.Text>
     </Card.Body>
     </Card>
