@@ -6,6 +6,11 @@ import Card from 'react-bootstrap/Card';
 import CardColumns from 'react-bootstrap/CardColumns';
 import Container from 'react-bootstrap/Container';
 import './AboutUs.css';
+import ctimg from './ct.jpg';
+import cjimg from './cj.jpeg';
+import cwimg from './cw.jpg';
+import caimg from './ca.jpg';
+
 
 // <div id="cw">
 // Craig Wagner
@@ -42,7 +47,7 @@ import './AboutUs.css';
 
 const AboutUs = () => {
   return (
-    <div id="nav">
+    <div id="nav" style={{ backgroundColor: `gainsboro`}}>
     <Navbar bg="light" expand="xl">
 
     <Navbar.Brand as={Link} to="/aboutus">About Us</Navbar.Brand>
@@ -59,42 +64,42 @@ const AboutUs = () => {
     <CardColumns className="cards">
 
 
-    <Card className="cw">
+    <Card className="cw" border = "secondary" style={{ }}>
+    <Card.Img variant = "top" src = {cwimg} alt="image of Craig" height = {280} />
     <Card.Body>
     <Card.Title>Craig Wagner</Card.Title>
     <Card.Text>
-    Some quick example text to build on the card title and make up the bulk of
-    the card's content.
+    Craig Wagner is a graduating senior Computer Science student at North Carolina A&T State University. He is a computer engineer and developer, with specialty in virtualized environments and system architecture. Craig took on the role of the creative lead and team leader for the project, and also programmed for the game's Visual Layer and Client connection.
     </Card.Text>
     </Card.Body>
     </Card>
 
-    <Card className="ca" style={{ }}>
+    <Card className="ca" border = "secondary" style={{ }}>
+    <Card.Img variant = "top" src = {caimg} alt="image of Chris"/>
     <Card.Body>
     <Card.Title>Christopher Allis</Card.Title>
     <Card.Text>
-    Some quick example text to build on the card title and make up the bulk of
-    the card's content.
+    Christopher Allis is a graduating senior Computer Science student at North Carolina A&T State University. While he enjoys tinkering on a plethora of different topics, he tends to work on server and web related work. In this project, Chris was tasked with creating the remote game server, handling the communication between the server and clients, and created the logical part of the card game engine.
     </Card.Text>
     </Card.Body>
     </Card>
 
-    <Card className="ct" style={{ }}>
+    <Card className="ct" border = "secondary" style={{ }}>
+    <Card.Img variant = "top" src = {ctimg}  alt = "image of Chanise"/>
     <Card.Body>
     <Card.Title>Chanise Taylor</Card.Title>
     <Card.Text>
-    Some quick example text to build on the card title and make up the bulk of
-    the card's content.
+    Chanise Taylor is a senior Computer Science student at North Carolina A&T State University. Her main interests in computer science lie in data analytics, cybersecurity and front-end development. In this project, she took on the role of a graphic designer, as she worked on the logo, card deck design, the game's graphical user interfaces on the Unity game engine and the about page within the website.
     </Card.Text>
     </Card.Body>
     </Card>
 
-    <Card className="cj" style={{ }}>
+    <Card className="cj" border = "secondary" style={{ }}>
+    <Card.Img variant = "top" src = {cjimg} alt = "image of Cheyanne" />
     <Card.Body>
     <Card.Title>Cheyanne Jackson</Card.Title>
     <Card.Text>
-    Some quick example text to build on the card title and make up the bulk of
-    the card's content.
+    Cheyanne Jackson is a graduating senior Computer Science student at North Carolina A&T State University. She is an aspiring software engineer, focusing in front-end development, who can eventually get into full-stack development as her journey goes on. She helped with documentation organization, website setup and making sure the Unity engine was able to be connected and showcased on the website.
     </Card.Text>
     </Card.Body>
     </Card>
