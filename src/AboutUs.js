@@ -65,7 +65,7 @@ const AboutUs = () => {
 
 
     <Card className="cw" border = "secondary" style={{ }}>
-    <Card.Img variant = "top" src = {cwimg} alt="image of Craig" width = {500} height = {250} />
+    <Card.Img variant = "top" src = {cwimg} alt="image of Craig" height = {280} />
     <Card.Body>
     <Card.Title>Craig Wagner</Card.Title>
     <Card.Text>
